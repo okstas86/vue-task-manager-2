@@ -1,0 +1,25 @@
+<template>
+	<div>
+		<slot></slot>
+	</div>
+</template>
+
+<style scoped>
+div {
+	width: 100%;
+	max-width: 28rem;
+	padding: 1rem;
+	margin: 0 auto;
+	border-radius: 0.5rem;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	background: linear-gradient(180deg, #474232 0%, #28271c 100%);
+	color: white;
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+	div {
+		width: 18rem;
+	}
+}
+</style>
